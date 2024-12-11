@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                // Ensure the output is compatible with ES modules
+    "module": "ESNext",                // Use ESNext modules to support features like `import` with JSON assertions
+    "moduleResolution": "node",        // Use Node.js-style module resolution
+    "esModuleInterop": true,           // Allow default imports from modules with no default export
+    "allowSyntheticDefaultImports": true, // Allow default imports even from non-ES modules
+    "outDir": "./dist",                // Output directory for compiled files
+    "rootDir": "./src",                // Source directory for TypeScript files
+    "resolveJsonModule": true,         // Enable the ability to import JSON files
+    "skipLibCheck": true               // Skip type checking of declaration files for faster compilation
+  },
+  "include": ["src/**/*"],             // Include all files under the 'src' folder
+  "exclude": ["node_modules", "dist"]  // Exclude 'node_modules' and 'dist' folders
+}
